@@ -31,7 +31,7 @@ class FirebaseUserRepo extends UserRepository {
   Future<void> logOut() async {
     await _firebaseAuth!.signOut();
   }
-
+ 
   @override
   Future<void> setUserData(MyUser user) async {
     try {
